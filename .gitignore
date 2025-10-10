@@ -38,10 +38,12 @@ Workspace/RTOS_workspace/FreeRTOS_Projects/.mxproject
 
 ## Generated source code
 # The .ioc file is all that's needed to re-generate any source code.
-Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/
-Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Src/
-Workspace/RTOS_workspace/FreeRTOS_Projects/Drivers/
-Workspace/RTOS_workspace/FreeRTOS_Projects/Middlewares/
+Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/*
+Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Src/*
+
+# We want the wildcard for the following folders incase custom drivers are added one day
+Workspace/RTOS_workspace/FreeRTOS_Projects/Drivers/*
+Workspace/RTOS_workspace/FreeRTOS_Projects/Middlewares/*
 
 # --- EXCEPTIONS (Do NOT Remove) --- #
 !Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/main.h
