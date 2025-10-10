@@ -1,5 +1,50 @@
+# Files containing the IDE installation executables
 IDE Files/
+
+# Miscellaneous
 PPT.pdf
 STM32CubeIDE 1.18.1.lnk
+
+# FreeRTOS source code and kernel, way too large to include in a repository
 Workspace/Software&Toolchain/
+
+# --- Standard STM32CubeIDE Rules ---
+
+## Workspace-specific files
+# Ignore local IDE settings.
 Workspace/RTOS_workspace/.metadata/
+
+## Build-related files and directories
+# Ignores compiled output folders and files.
+**/build/
+**/Debug/
+**/Release/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+*.su
+*.bak
+
+## STM32CubeIDE project-specific files
+# Ignores local project settings that vary between users.
+Workspace/RTOS_workspace/FreeRTOS_Projects/.project
+Workspace/RTOS_workspace/FreeRTOS_Projects/.cproject
+Workspace/RTOS_workspace/FreeRTOS_Projects/.settings/
+Workspace/RTOS_workspace/FreeRTOS_Projects/*.launch
+Workspace/RTOS_workspace/FreeRTOS_Projects/.mxproject
+
+## Generated source code
+# The .ioc file is all that's needed to re-generate any source code.
+Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/
+Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Src/
+Workspace/RTOS_workspace/FreeRTOS_Projects/Drivers/
+Workspace/RTOS_workspace/FreeRTOS_Projects/Middlewares/
+
+# --- EXCEPTIONS (Do NOT Remove) --- #
+!Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/main.h
+!Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Src/main.c
+!Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Inc/stm32*_it.h
+!Workspace/RTOS_workspace/FreeRTOS_Projects/Core/Src/stm32*_it.c
